@@ -1,0 +1,13 @@
+<div class="card" style="width: 18rem;">
+  <img src="http://placehold.it/320x150" alt="Responsive image">
+  <div class="card-body">
+    <h5 class="float-right">{{product.price | currency: 'GTQ'}}</h5>
+     <h5><a [routerLink]="['/products', product.id]">{{product.title}}</a>
+     </h5>
+    <p>{{product.description}}</p>
+  </div>
+  <div class="ratings">
+     <nga-stars [rating]="product.rating"></nga-stars>
+  </div>
+</div>
+
